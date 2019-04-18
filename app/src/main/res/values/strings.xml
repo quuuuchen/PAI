@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PAI_test</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_record">Record</string>
+    <string name="title_map">Map</string>
+    <string name="title_list">List</string>
+    <string name="title_member">Member</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyBMUo_A6OEPhFbgNzup_MaoLGrp8KTrAY8</string>
+</resources>

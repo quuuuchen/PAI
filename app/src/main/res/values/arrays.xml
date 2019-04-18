@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="functions">
+        <item>即時訊息</item>
+        <item>最新優惠</item>
+        <item>路況報你知</item>
+    </string-array>
+</resources>
