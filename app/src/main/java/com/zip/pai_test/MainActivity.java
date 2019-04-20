@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.navigation_map:
                 fragment=new MapFragment();
 //                FragmentManager manager = getSupportFragmentManager();
-//                manager.beginTransaction().replace()
+//                manager.beginTransaction().replace();
 
                 break;
             case R.id.navigation_list:
