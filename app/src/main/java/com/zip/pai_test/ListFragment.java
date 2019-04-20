@@ -2,26 +2,42 @@ package com.zip.pai_test;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
 public class ListFragment extends Fragment {
-    String[] functions =null;
+
     private View view;
-    public RecyclerView recyclerView;
-    Context context;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_list, null);
+
+        final TextView mTextField = (TextView)view.findViewById(R.id.timer_test);
+
+        new CountDownTimer(30000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                mTextField.setText("seconds remaining: " + (31-(millisUntilFinished / 1000)));
+            }
+
+            public void onFinish() {
+                mTextField.setText("done!");
+            }
+        }.start();
+
 
 //        RecyclerView recyclerView = getView().findViewById(R.id.recycler);
 //        recyclerView.setHasFixedSize(true);
