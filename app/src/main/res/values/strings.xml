@@ -8,5 +8,5 @@
     <string name="title_list">List</string>
     <string name="title_member">Member</string>
     <string name="title_activity_maps">Map</string>
-    <string name="google_maps_key">AIzaSyBMUo_A6OEPhFbgNzup_MaoLGrp8KTrAY8</string>
+    <string name="google_maps_key">YourApiKey</string>
 </resources>
